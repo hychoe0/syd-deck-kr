@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPONSOR YOUR DAY</title>
+    
+    <meta property="og:title" content="SPONSOR YOUR DAY">
+    <meta property="og:description" content="You are the billboard. Join the race.">
+    <meta property="og:image" content="assets/01-header.jpg"> 
+
+    <style>
+        /* RESET */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: #050505; /* Almost black background for desktop */
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        /* THE PHONE CONTAINER */
+        .mobile-container {
+            width: 100%;
+            max-width: 480px; /* Limits width on desktop */
+            background-color: #000000; /* Pure black for content */
+            position: relative;
+            box-shadow: 0 0 80px rgba(204, 255, 0, 0.1); /* Subtle Neon Yellow Ambience */
+        }
+
+        /* IMAGE STACKING */
+        .deck-image {
+            width: 100%;
+            display: block; /* Removes vertical gap between images */
+            height: auto;
+            pointer-events: none; /* Prevents users from dragging/saving images easily */
+        }
+
+        /* OPTIONAL: BOTTOM FLOATING BUTTON */
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #CCFF00; /* Neon Yellow */
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 800;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(204, 255, 0, 0.6);
+            z-index: 100;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+        .fab:active { transform: translateX(-50%) scale(0.95); }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-container">
+        <img src="assets/pitchdeck 1.jpg" class="deck-image" alt="Header">
+        <img src="assets/pitchdeck 2.jpg" class="deck-image" alt="Problem">
+        <img src="assets/pitchdeck 3.jpg" class="deck-image" alt="Solution">
+        <!-- <img src="assets/04-tech.jpg" class="deck-image" alt="Tech">
+        <img src="assets/05-footer.jpg" class="deck-image" alt="Contact"> -->
+        
+        <a href="mailto:contact@sponsoryourday.com" class="fab">Contact Us</a>
+    </div>
+
+</body>
+</html>
